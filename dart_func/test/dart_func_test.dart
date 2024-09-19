@@ -1,4 +1,3 @@
-import 'package:dart_func/dart_func.dart';
 import 'package:test/test.dart';
 
 void main() {

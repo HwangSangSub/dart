@@ -10,13 +10,9 @@ void fieldMain() {
   Employee emp = Employee()
     ..name = 'Employee'; // 객체를 생성하면서 그 객체의 값을 바로 지정하는 표현식
 
-  var result = emp?.name;
+  var result = emp.name;
 
-  if (emp == null) {
-    result = null;
-  } else {
-    result = emp.name;
-  }
+  result = emp.name;
 
   print(result);
 }

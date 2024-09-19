@@ -20,8 +20,8 @@ main() {
   // 상수 생성자는 const를 붙여야 한다
   Person personOne = const Person('Kim', 25); // 새로운 객체 생성
   Person personTwo = const Person('Kim', 25); // 동일한 객체 참조
-  Person personThree = new Person('Kim', 25); // 새로운 객체 생성
-  Person personFour = new Person('Kim', 25); // 새로운 객체 생성
+  Person personThree = Person('Kim', 25); // 새로운 객체 생성
+  Person personFour = Person('Kim', 25); // 새로운 객체 생성
 
   // 각 객체의 멤버 변수 값을 출력
   print('one : ${personOne.showInfo()}');

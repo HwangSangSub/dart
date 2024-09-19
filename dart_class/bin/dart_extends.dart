@@ -13,7 +13,7 @@ class Person {
   }
 
   getName() {
-    return this.name;
+    return name;
   }
 
   showInfo() {

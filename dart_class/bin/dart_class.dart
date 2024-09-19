@@ -8,13 +8,13 @@ class Person {
 
   // 함수 => 메소드
   String getName() {
-    return this.name ?? 'No Person';
+    return name ?? 'No Person';
   }
 }
 
 void main() {
   //인스턴스(객체)를 생성
-  Person student = new Person();
+  Person student = Person();
   var teacher = Person();
 
   // 객체 필드 접근

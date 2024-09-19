@@ -17,7 +17,7 @@ void main(List<String> arguments) {
   print('========================================================');
   // ??= : ??(if null) > ??표현은 널을 체크한다.
 
-  String? msg = null; // null 허용
+  String? msg; // null 허용
   print(msg);
   msg ??= 'Hello, Dart!'; //msg가 널이기 때문에 오른쪽 값이 대입된다.
   print(msg);

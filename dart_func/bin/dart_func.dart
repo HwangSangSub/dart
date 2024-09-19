@@ -1,4 +1,3 @@
-import 'package:dart_func/dart_func.dart' as dart_func;
 
 // 함수 선언 : 리턴타입 함수명 (매개변수 [, 매개변수, ...])
 String printMessage(String msg) {

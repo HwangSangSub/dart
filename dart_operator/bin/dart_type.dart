@@ -7,15 +7,17 @@ class Person {
 }
 
 class Employee extends Person {
+  @override
   String name = 'Employee';
 }
 
 class Student extends Person {
+  @override
   String name = 'Student';
 }
 
 void main() {
-  Employee emp = new Employee(); // new 연산자를 있긴 하지만 new를 생략하는 추세이다.
+  Employee emp = Employee(); // new 연산자를 있긴 하지만 new를 생략하는 추세이다.
   Student std = Student();
 
   // 타입변환
@@ -26,16 +28,8 @@ void main() {
   print('second.name = ${second.name}'); // Student
 
   // 맞는지, 타입검사 : is
-  if (emp is Employee) {
-    print('emp is Employee');
-  } else {
-    print('emp is not Employee');
-  }
+  print('emp is Employee');
 
   // 아닌지, 타입검사 : is!
-  if (emp is! Employee) {
-    print('emp is not Employee');
-  } else {
-    print('emp is Employee');
-  }
+  print('emp is Employee');
 }

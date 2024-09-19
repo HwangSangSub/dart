@@ -8,7 +8,7 @@ class Person {
 
   // 함수, 메소드
   getName() {
-    return this.name;
+    return name;
   }
 }
 
